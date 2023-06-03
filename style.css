@@ -371,7 +371,9 @@
     
     .esperando-mensaje{
         width: 80%;
-        top: 10%;
+        height: 15%;
+        top: 80%;
+        left: 10%;
     }
     .encriptar img{
 
