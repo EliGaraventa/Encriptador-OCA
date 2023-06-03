@@ -12,27 +12,46 @@
 </head>
 <body>
     <div class="container">
+        <div class="logo">
+            <img class="logo" src="./imagenes/LogoAlura.png" alt="logo">
+        </div>
         <div class="encriptado">
             <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
         </div>
     
         <div class="terminos">
+            <img src="./imagenes/Group.png" alt="signo-exclamacion">
             <p>Solo letras minúsculas y sin acentos.</p>
         </div>
         <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-            <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            <button class="btn-encriptar" id="btn-encriptar" type="button" >Encriptar</button>
+            <button class="btn-desencriptar" id="btn-desencriptar" type="button" >Desencriptar</button>
+        </div>
+        
+        <div class="esperando-mensaje" id="esperando-mensaje"></div>
+        
+    <div class="encriptar" id="caja-encriptar">
+
+        <img src="./imagenes/Muñeco.png" alt="Muñeco" id="img-muñeco">
+
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
 
-    <div class="encriptar">
-        <img src="" alt="Muñeco" id="img-muñeco">
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h3 id="titulo-mensaje">Ningún mensaje fue encontrado</h3>
-            <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        <div class="contenedor-copiar">
+            <input type="button" class="btn-copiar" id="btn-copiar" value="Copiar">
         </div>
+
+        <div class="contenedor-resultado">
+            <p class="texto-resultado"></p>
+        </div>
+        
     </div>  
     </div>
 </body>
 <script src="./index.js"></script>
 </html>
+
+
+
